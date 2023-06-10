@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>
+      Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="center" id="title">
+      Clean City
+    </h1>
+    <p class="center" id="description">
+      Thank you making the world a better place
+    </p>
+    <form id="survey-form" method="POST" action="">
+      <fieldset>
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label">Age(optional) <input id="number" type="number" placeholder="Age  " min="18" max="120" /></label>
+        <p>Would you recommend us to your friends?</p>
+        <label> <input class="inline" type="radio" name="recommend" value="yes"/> Yes </label>
+        <label><input class="inline" type= "radio" name="recommend" value="no"/> No </label>
+      </fieldset>
+      <fieldset>
+        <label>How did you hear about us?
+          <select id="dropdown" required>
+            <option disabled selected value>(select one)</option>
+            <option value="1">Instagram</option>
+            <option value="2">Facebook</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+        <p>What would you like to improve?</p>
+        <label><input class="inline" type="checkbox" value="Website"/> Website </label>
+        <label><input class="inline" type="checkbox" value="Pick up Time"/> Pick up Time </label>
+        <label><input class="inline" type="checkbox" value="Service Area"/> Service Area </label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions? <textarea id="textarea" rows="3" cols="30" placeholder="Enter your comments here..."></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+
+  </body>
+
+</html>
